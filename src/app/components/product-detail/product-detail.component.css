@@ -1,0 +1,28 @@
+.product-details {
+    /* Overall container styling */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .product-info {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .product-info dt {
+    font-weight: bold;
+  }
+  
+  .product-info dd {
+    margin-left: 10px;
+  }
+  
+  .back-button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #333;
+  }

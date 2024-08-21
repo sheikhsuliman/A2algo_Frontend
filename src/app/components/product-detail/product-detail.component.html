@@ -1,0 +1,17 @@
+<div class="product-details" *ngIf="product">
+  <h2>{{ product?.name }} Details</h2>
+  <dl class="product-info">
+    <dt>ID:</dt>
+    <dd>{{ product?.productId }}</dd>
+    <dt>Name:</dt>
+    <dd>{{ product?.name }}</dd>
+    <dt>Description:</dt>
+    <dd>{{ product?.description }}</dd>
+    <dt>Quantity:</dt>
+    <dd>{{ product?.quantity }}</dd>
+  </dl>
+  <a routerLink="/products" class="back-button">Back to Products List</a>
+</div>
+<div *ngIf="!product">
+  <p>Loading...</p>
+</div>

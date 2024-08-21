@@ -1,0 +1,25 @@
+<h2>Product List</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.productId }}</td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.description }}</td>
+      <td>{{ product.quantity }}</td>
+      <td>
+        <button (click)="product && (product.productId)">Delete</button>
+        <a [routerLink]="['/products/edit', product!.productId]">Edit</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<a routerLink="/products/add">Add New Product</a>
